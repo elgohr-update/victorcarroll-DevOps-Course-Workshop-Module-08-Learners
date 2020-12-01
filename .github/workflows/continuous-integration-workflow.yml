@@ -42,10 +42,11 @@ jobs:
         name: victorcarroll/module8_exercise
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
-        
-      - uses: akhileshns/heroku-deploy@v3.6.8 # This is the action
-        with:
-          heroku_api_key: ${{secrets.HEROKU_API_KEY}}
-          heroku_app_name: "module8blah" #Must be unique in Heroku
-          heroku_email: "victorcarroll@gmail.com"
-          usedocker: true
+    
+    - name: Heroku    
+      uses: akhileshns/heroku-deploy@v3.6.8 # This is the action
+      with:
+        heroku_api_key: ${{secrets.HEROKU_API_KEY}}
+        heroku_app_name: "module8blah" #Must be unique in Heroku
+        heroku_email: "victorcarroll@gmail.com"
+        usedocker: true
