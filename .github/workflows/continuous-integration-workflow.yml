@@ -43,4 +43,4 @@ jobs:
       with:
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
-        repository: module8_exercise
+        repository: victorcarroll/module8_exercise
